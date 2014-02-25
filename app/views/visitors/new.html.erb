@@ -1,20 +1,50 @@
 <% content_for :title do %>Foobar Kadigan<% end %>
 <% content_for :description do %>Website of Foobar Kadigan<% end %>
-<section>
-  <img src="http://lorempixel.com/1170/600/cats/1">
-</section>
-<section>
-  <div class="column">
-    <h2>Stay in touch.</h2>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div id="slider">
+      <img src="assets/Untitled.jpg" />
+    </div>
+    <hr />
   </div>
-  <div class="column">
-    <div class="form-centered">
-      <%= simple_form_for @visitor do |f| %>
-        <%= f.error_notification %>
-        <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
-        <br/>
-        <%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
-      <% end %>
+</div>
+
+<div class="row">
+  <div class="large-4 columns">
+    <img src="/assets/Fan.jpg" />
+    <h4>Residential</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+  </div>
+    
+  <div class="large-4 columns">
+    <img src="assets/Theater.jpg" />
+    <h4>Commercial</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+  </div>
+    
+  <div class="large-4 columns">
+    <img src="assets/Patio.jpg" />
+    <h4>Custom</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+  </div>
+</div>
+<section>
+  <!-- Call to Action Panel -->
+<div class="row">
+    <div class="large-12 columns">   
+      <div class="panel">
+        <h4>Get in touch!</h4>
+        <div class="row">
+          <div class="large-9 columns">
+          <%= simple_form_for @visitor do |f| %>
+            <%= f.error_notification %>
+            <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
+            <br/>
+            <%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
+          <% end %>
+        </div>
+      </div>      
     </div>
   </div>
 </section>
