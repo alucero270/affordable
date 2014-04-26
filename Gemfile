@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem "activerecord-tableless", "~> 1.0"
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'active_scaffold'
 
 gem 'figaro'
 gem 'foundation-rails', '5.0.3.1'
