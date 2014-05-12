@@ -8,17 +8,17 @@ gem 'jquery-rails'
 gem "activerecord-tableless", "~> 1.0"
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'active_scaffold'
+gem 'skrollr-rails'
 
 gem 'figaro'
-gem 'foundation-rails', '5.0.3.1'
 gem 'gibbon'
 gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
-
+gem 'bootstrap-sass'
 group :development do
+  gem 'rails_layout'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'hub', :require=>nil

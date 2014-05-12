@@ -13,7 +13,7 @@ Bundler.require(:default, Rails.env)
 
 module Affordable
   class Application < Rails::Application
-    
+    config.assets.initialize_on_precompile = false
     config.generators do |g| 
         g.test_framework :rspec, 
             :fixtures => true, 
@@ -35,5 +35,9 @@ module Affordable
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # For Foundation 5
+    config.assets.precompile += %w( vendor/modernizr )
+
   end
 end

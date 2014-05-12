@@ -4,41 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Affordable" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Affordable" %>">
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-    <%# Modernizr is required for Zurb Foundation %>
-    <%= javascript_include_tag "vendor/modernizr" %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-     <div class="row">
-    <div class="large-12 columns">
- 
-      <!-- Navigation -->
- 
-<ul class="button-group">
-  <li>
-    <%= link_to "https://www.facebook.com/pages/Affordable-Electrical-Service/164846723545824" do %>
-      <%= image_tag 'facebook.png' %>
-    <% end %>
-  </li>
-  <li>
-    <%= link_to "http://www.twitter.com/user" do %>
-    <%= image_tag 'twitter.png' %>
-  <% end %>
-  </li>
-</ul>
- 
-      <!-- End Navigation -->
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
-    <script src="js/jquery.js"></script> 
-    <script src="js/foundation.js"></script> 
-    <script src="js/foundation.orbit.js"></script>
   </body>
 </html>

@@ -1,48 +1,45 @@
 // import the CSS framework
-@import "foundation";
+@import "bootstrap";
 
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  }
 // override for the 'Home' navigation link
-.top-bar .name {
-  font-size: rem-calc(13);
-  line-height: 45px; }
-.top-bar .name a {
-  font-weight: normal;
-  color: white;
-  padding: 0 15px; }
+.navbar-brand {
+  font-size: inherit;
+  }
 
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create mixins using Foundation classes
-@mixin twelve-columns {
-  @extend .small-12;
-  @extend .columns;
-  }
-@mixin six-columns-centered {
-  @extend .small-6;
-  @extend .columns;
-  @extend .text-center;
-  }
-// create your own classes
-// to make views framework-neutral
-.column {
-  @include six-columns-centered;
-  }
-.form {
-  @include grid-column(6);
-  }
-.form-centered {
-  @include six-columns-centered;
-  }
-.submit {
-  @extend .button;
-  @extend .radius;
-  }
-// apply styles to HTML elements
-// to make views framework-neutral
-main {
-  @include twelve-columns;
-  background-color: #eee;
-  }
-section {
-  @extend .row;
-  margin-top: 20px;
-  }
+
+
+
+//parallax 
+#intro {
+    background: url(http://cl.jroo.me/z3/k/p/B/d/a.aaa-Epic-jump.jpg) no-repeat center center fixed;
+    height: auto; 
+    margin: 0 auto;
+    width: cover;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+#home {
+    background: url(flickr-613445810-hd.jpg) no-repeat center center fixed;
+    height: auto; 
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+#about {
+    background: url(http://www.russen.no/buss/wp-content/uploads/2011/09/bomb-diggity.jpg) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+    color: #fff;
+}
