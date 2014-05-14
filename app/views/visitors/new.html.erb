@@ -48,7 +48,9 @@
               <form class="form">
             
         <h4>Get in touch!</h4>
-                  <%= simple_form_for @visitor do |f| %>
+
+<%= simple_form_for(@visitor, html: {class: 'form-horizontal' }) do |f| %>
+
             <%= f.error_notification %>
             <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
             <br/>
