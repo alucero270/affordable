@@ -8,7 +8,9 @@ gem 'jquery-rails'
 gem "activerecord-tableless", "~> 1.0"
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'skrollr-rails'
+gem 'bourbon'
+gem 'compass-rails' # you need this or you get an err
+gem 'zurb-foundation', '~> 4.0.0'
 
 gem 'figaro'
 gem 'gibbon'
@@ -16,7 +18,7 @@ gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
-gem 'bootstrap-sass'
+
 group :development do
   gem 'rails_layout'
   gem 'better_errors'
