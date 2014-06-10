@@ -10,7 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bourbon'
 gem 'compass-rails' # you need this or you get an err
-gem 'zurb-foundation', '~> 4.0.0'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 gem 'figaro'
 gem 'gibbon'

@@ -5,12 +5,10 @@
     <title><%= content_for?(:title) ? yield(:title) : "Affordable" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Affordable" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%# Modernizr is required for Zurb Foundation %>
-    <%= javascript_include_tag 'vendor/modernizr' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
     <header>
       <%= render 'layouts/navigation' %>
     </header>
@@ -18,5 +16,11 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+    
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/retina.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-func.js"></script>
   </body>
 </html>

@@ -142,8 +142,4 @@ SimpleForm.setup do |config|
 
   # Default class for inputs
   # config.input_class = nil
-require Rails.root.join("lib/core_ext/simple_form/inputs/string_input")
-require Rails.root.join("lib/core_ext/simple_form/inputs/password_input")
-  
-Dir[Rails.root.join("lib/core_ext/simple_form/**/*.rb")].each { |f| require f 
 end
